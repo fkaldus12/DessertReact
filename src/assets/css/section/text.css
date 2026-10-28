@@ -1,0 +1,125 @@
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.section {
+    padding: 120px 0;
+}
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.section > span {
+    display: block;
+    text-align: center;
+    margin-bottom: 16px;
+    text-decoration: underline;
+}
+
+.text_inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-gap: 20px;
+}
+
+.txt {
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+.txt:hover {
+    background-color: aliceblue;
+}
+
+.txt_title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    /* 한줄생략 삼총사 */
+
+    position: relative;
+    padding-top: 75px;
+}
+
+.txt_desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 20px;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.text_btn {
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+/* 아이콘 만들기 */
+.txt_title::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    background: url(../../img/icon.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.t1 .txt_title::before {
+    background-position: 0 0;
+}
+.t2 .txt_title::before {
+    background-position: -48px 0;
+}
+.t3 .txt_title::before {
+    background-position: -96px 0;
+}
+.t4 .txt_title::before {
+    background-position: -144px 0;
+}
+.t5 .txt_title::before {
+    background-position: -192px 0;
+}
+.t6 .txt_title::before {
+    background-position: -240px 0;
+}
+
+.t1:hover .txt_title::before {
+    background-position: 0 -48px;
+}
+.t2:hover .txt_title::before {
+    background-position: -48px -48px;
+}
+.t3:hover .txt_title::before {
+    background-position: -96px -48px;
+}
+.t4:hover .txt_title::before {
+    background-position: -144px -48px;
+}
+.t5:hover .txt_title::before {
+    background-position: -192px -48px;
+}
+.t6:hover .txt_title::before {
+    background-position: -240px -48px;
+}

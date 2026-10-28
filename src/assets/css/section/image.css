@@ -1,0 +1,88 @@
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+/* #imageType {
+    transform: translateY(200px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+#imageType .show {
+    transform: translateY(0);
+    opacity: 1;
+} */
+
+.hover_wrap {
+}
+.hover_wrap .txt {
+    text-align: center;
+    line-height: 1.5;
+    padding: 70px;
+}
+.hover_wrap .txt .bld {
+    font-size: 50px;
+}
+.hover_wrap .txt p {
+    font-size: 20px;
+    color: #666666;
+}
+.hover_wrap figcaption {
+    color: #fff;
+    width: 570px;
+    height: 379px;
+    overflow: hidden;
+}
+.hover_wrap figcaption h2 {
+    font-size: 48px;
+    line-height: 1.6;
+
+    padding-left: 30px;
+}
+.hover_wrap figcaption p {
+    margin-top: 5px;
+    line-height: 1.2;
+    margin-left: 30px;
+}
+.imageButton {
+    margin-top: 20px;
+}
+.imageButton a {
+    padding: 8px 20px;
+    margin-left: 30px;
+    background-color: #9999997e;
+
+    transition: all 0.2s;
+}
+.imageButton a:hover {
+    color: #999999fb;
+}
+.hover_inner {
+    display: flex;
+    justify-content: space-between;
+}
+.hero .desc {
+    margin-top: 130px;
+    padding: 21px 0;
+}
+
+/* 이미지 */
+
+.hover1 {
+    background: url(../../img/img_01.png) no-repeat;
+}
+.hover2 {
+    background: url(../../img/img02.png) no-repeat;
+}
+
+/* 효과 */
+figcaption .desc {
+    transform: translateY(220px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+figcaption:hover .desc {
+    transform: translateY(0);
+    opacity: 1;
+}

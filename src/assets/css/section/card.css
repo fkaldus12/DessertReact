@@ -1,0 +1,66 @@
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.section {
+    padding: 120px 0;
+}
+.section > h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section > p {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* cardType */
+#cardType > p {
+    width: 41%;
+    margin: 0 auto 70px auto;
+}
+
+.card_inner {
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .card figure {
+    width: 373px;
+} */
+.card .card_body {
+    padding: 24px;
+
+    background-color: #d9d9d96b;
+}
+.card .card_body .tit {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.card .card_body .desc {
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 10px;
+    line-height: 1.4;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 4; /* 노출할 줄 수 지정 */
+    -webkit-box-orient: vertical; /* 박스의 흐름 방향 설정 */
+    overflow: hidden; /* 넘치는 텍스트 숨김 */
+    text-overflow: ellipsis; /* 말줄임표(...) 적용 */
+}
+.card .card_body .btn {
+    display: inline-block;
+    margin-top: 25px;
+}
+.card .card_body .btn a {
+    font-size: 16px;
+    font-weight: 300;
+}

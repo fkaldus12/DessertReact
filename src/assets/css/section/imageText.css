@@ -1,0 +1,61 @@
+/* imgeText */
+
+#imgeText {
+}
+.imgeText_inner {
+    display: flex;
+    gap: 20px;
+}
+.imgeText_inner > div {
+    flex: 1;
+}
+.imgeText_txt {
+    color: #666666;
+}
+.imgeText_txt .small {
+    text-decoration: underline;
+}
+.imgeText_txt .title {
+    font-size: 50px;
+    margin-top: 23px;
+    margin-bottom: 19px;
+    line-height: 1.4;
+    color: black;
+    word-break: keep-all;
+}
+.imgeText_txt .desc {
+    line-height: 1.2;
+    margin-bottom: 36px;
+    word-break: keep-all;
+    font-weight: 400;
+}
+.imgeText_txt .list {
+    line-height: 1.6;
+}
+.imgeText_txt .list a {
+    color: #4b4a4a;
+}
+.imgeText_txt .list a:hover {
+    color: #030303;
+}
+.imgeText_img {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px #999;
+}
+
+.imgeText_img a {
+    display: inline-block;
+    padding: 5px 14px 5px 14px;
+    border-radius: 30px;
+    background-color: #ff956e;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.imgeText_img .img1 {
+}
+.imgeText_img .img2 {
+}
