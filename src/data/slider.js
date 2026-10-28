@@ -1,6 +1,6 @@
 import sildeImg1 from "../assets/img/slideImg.jpg";
-import sildeImg1 from "../assets/img/slideImg2.jpg";
-import sildeImg1 from "../assets/img/slideImg3.jpg";
+import sildeImg2 from "../assets/img/slideImg2.jpg";
+import sildeImg3 from "../assets/img/slideImg3.jpg";
 
 export const sliderData = [
     {

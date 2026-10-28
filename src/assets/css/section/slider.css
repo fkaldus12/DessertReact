@@ -6,7 +6,6 @@
 #silder_type {
     width: 100%;
     height: 600px;
-    background-color: #c40404;
 }
 .s1 {
     width: 100%;
@@ -14,8 +13,13 @@
     top: 0;
     left: 0;
 }
-#silder_type img {
+#silder_type .hero {
+    height: 100%;
+}
+#silder_type .swiper-slide > img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .silde_01 {
 }
@@ -61,7 +65,7 @@
 }
 
 .hero .swiper-button-next,
-.swiper-button-prev {
+.hero .swiper-button-prev {
     color: #fff;
 }
 .hero .swiper-pagination-bullet-active {

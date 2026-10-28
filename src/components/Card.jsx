@@ -1,23 +1,32 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { cardData } from "../data/cardData";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Card = () => {
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <section id="cardType" className="section">
             <h2>카페, 그 이상의 문화를 만들다</h2>
             <p>
-                투썸플레이스는 프리미엄 커피 & 디저트 카페의 리딩 브랜드로서
-                디저트 카페 문화의 차별화된 제품과 서비스를 선보일 것입니다
+                투썸플레이스는 프리미엄 커피 & 디저트 카페의 리딩 브랜드로서 디저트 카페 문화의
+                차별화된 제품과 서비스를 선보일 것입니다
             </p>
+
             <div className="container card_inner">
                 {cardData.map((card, idx) => (
-                    <div className="card" key={idx}>
+                    <div className="card" key={idx} data-aos="zoom-in" data-aos-delay={idx * 200}>
                         <figure>
                             <img src={card.img} alt={card.alt} />
                         </figure>
+
                         <div className="card_body">
                             <div className="tit">{card.tit}</div>
                             <div className="desc">{card.desc}</div>
+
                             <a href="/" className="btn">
                                 더 자세히 보기
                                 <span>

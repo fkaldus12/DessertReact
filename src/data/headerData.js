@@ -4,7 +4,7 @@
 // };
 export const menuData = [
     { title: "About", link: "#imageType" },
-    { title: "Menu", link: "#imageText" },
+    { title: "Menu", link: "#imgeText" },
     { title: "Store", link: "#cardType" },
     { title: "Sale", link: "#bannerType" },
     { title: "Event", link: "#textType" },
